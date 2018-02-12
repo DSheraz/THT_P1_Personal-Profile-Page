@@ -220,39 +220,40 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for Larger screen */
-@media screen and (min-width: 720px ) {
-
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
   .flex {
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 1200px;
-    .ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
   }
 
-header {
-  min height: 470px;
-}
+  header {
+    min-height: 470px;
+  }
 
-.nav {
-  max-width: 1200px;
-  padding: 0 30px;
-}
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
 
-main {
-  padding-top: 20px;
-}
 
-main p {
-  line-height: 1.6em;
-}
+  main {
+    padding-top: 20px;
+  }
 
-footer {
-  font-size: 1.3em;
-  max-width: 1200px;
-  margin: 40px auto;
-}
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
 
 }
